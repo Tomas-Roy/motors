@@ -1,0 +1,663 @@
+@media all and (max-width: 1200px) {
+  .register-form-area .col-lg-9.col-md-12.mb-md-5 {
+    width: 100%;
+  }
+  .register-form-area .col-lg-3.col-md-12 {
+    width: 100%;
+    order: -1;
+    margin-bottom: 25px;
+  }
+  .recomendation {
+    padding-left: 0;
+  }
+  .stm-registation h3 {
+    margin-right: 13px;
+  }
+
+}
+@media all and (min-width: 1140px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 1139.99px) {
+  .nav > ul > li a {
+    padding: 11px 12px;
+  }
+  .logoMenu {
+    gap: 20px;
+  }
+  .counterSingleItemsImg i {
+    font-size: 36px;
+  }
+  .counterSingleItemsText h3 {
+    font-size: 40px;
+  }
+  .header_main {
+    display: none;
+  }
+  /* Start blog page */
+  .blog-area-main {
+    margin-top: 100px;
+  }
+  .blog-main {
+    margin: 0 0px;
+  }
+  .blog-box {
+    margin: 0 4px 50px 4px;
+  }
+  .blog-content {
+    padding: 25px 30px 14px 30px;
+  }
+  /* End blog page */
+}
+
+/* Start inventory page  */
+@media all and (max-width: 1050px){
+
+  .mainArticle-inventory .row .col-lg-9 {
+    width: 100%;
+  }
+  .mainArticle-inventory .row .col-lg-3 {
+    width: 100%;
+    position: relative;
+  }
+  .anibodsfkj {
+    flex-wrap: wrap;
+    gap: 0px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .serchMenuButton a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .search-option-inventorys {
+    position:fixed;
+    left: -100%;
+    top: 72px;
+    width: 60%;
+    margin: 0 auto;
+    z-index: 999999;
+    transition: 0.5s;
+  }
+  .ofCanvaseoof {
+    left: 0;
+    top: 72px;
+  }
+  #accordionPanelsStayOpenExample {
+    display: none;
+  }
+  .inventory-search-area {
+    margin-top: 30px;
+  }
+  .cars-of-sels {
+    display: none;
+  }
+  .short-labelss label {
+    display: none;
+  }
+  .sels-short-search {
+    justify-content: space-between !important;
+    flex-basis: 100%;
+  }
+  .car-details-area {
+    flex-direction: column;
+  }
+  .sodmfneif {
+    border-right: none;
+    padding: 0px 0px;
+    border-bottom: 1px solid #DDDDDD !important;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .fuelPump br {
+    display: none;
+  }
+  .fuelPump .Gfuelpump {
+    padding: 0 6px 0 0;
+  }
+  .wheelsarehjga {
+    width: 100%;
+  }
+  .wheelsarehjga a {
+    border-radius: 12px;
+    padding: 10px 0px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .signimage img {
+    max-height: 25px;
+    display: none;
+  }
+  .Viewmoreserdflv a{
+    display: block;
+  }
+  .serchMenuButton {
+    display: block;
+  }
+  .countAccordion {
+    display: none;
+  }
+}
+
+/* End inventory page  */
+
+@media all and (max-width: 991px) {
+  .mainMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #025b80 !important;
+    color: #fff;
+    padding: 17px 0;
+    z-index: 1000;
+  }
+  .nav > ul {
+    display: none;
+  }
+  .profileMenuItem > a {
+    display: none;
+  }
+  .loginArea {
+    display: none;
+  }
+
+  .singleInputLogin label {
+    color: #fff;
+  }
+  h1 {
+    font-size: 52px;
+  }
+  .bannerArea p {
+    font-size: 16px;
+  }
+  .selectedTab button {
+    padding: 15px 22px 12px;
+    font-size: 14px;
+  }
+  .searchMaxArea {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 48%;
+    flex: 0 0 48%;
+  }
+  .searchOption {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .bannerMain {
+    padding: 138px 0 170px 0;
+  }
+  .carHeaderLeft h2 {
+    font-size: 24px;
+  }
+  .counterSingleItems {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .profileMenuItem {
+    gap: 24px;
+  }
+  .menuicon {
+    display: block;
+  }
+  .phon-stats {
+    font-size: 15px;
+  }
+  .socisl-cars {
+    font-size: 11px;
+  }
+  .social-call a i {
+    font-size: 22px;
+    margin: 0px 12px 0px 0px;
+  }
+  .make-offers .offers-contact {
+    padding: 13px 13px 13px 14px;
+  }
+  .input-type-author .form-input {
+    flex-basis: 48%;
+  }
+  .input-type-author {
+    flex-direction: column;
+  }
+  .form-input input {
+    margin-bottom: 0px;
+  }
+  .checkbox-leaders {
+    margin-top: 25px;
+  }
+  .form-input label {
+    margin-top: 0px;
+  }
+  .messagetoleaders textarea {
+    margin-bottom: 14px;
+  }
+  .message-dealers-contact-form .col-md-4 {
+    padding-left: 0;
+  }
+  .talal-contact {
+    padding: 15px;
+    padding-top: 26px;
+  }
+  .message-dealers-contact-form .show-numbers i {
+    color: #1bc741;
+    margin-right: 7px;
+  }
+
+  /* Start dealers page  */
+  .leaders-input-area {
+    flex-basis: 67%;
+  }
+  .leaders-search-btn {
+    flex-basis: 25%;
+  }
+  .leaders-input-area {
+    flex-basis: 73%;
+    flex-wrap: wrap;
+  }
+  .leaders-input-area .searchMaxArea {
+    flex-basis: calc(95%/2);
+  }
+  .search-leaders-review form label {
+    display: none;
+  }
+  .child-leaders:nth-child(6) {
+    display: none;
+  }
+  .dlsd-table-area .leaders-logo-img {
+    max-width: 80%;
+  }
+  .child-leaders:nth-child(5) {
+    flex-basis: 28%;
+  }
+  .find-dealars-area {
+    margin-top: 126px;
+  }
+/* End dealers page  */
+/* Start blog page  */
+.blog-area-main {
+  margin-top: 60px;
+}
+
+/* End blog page  */
+/* Start add-car page */
+.note-menu ul {
+	align-items: center;
+	flex-wrap: wrap;
+}
+/* End add-car page */
+.Add-the-Template {
+	margin-top: 26px;
+	margin-bottom: 40px;
+}
+   /**** start Compare Page  ****/
+  /**** ************** ****/
+ 
+  .compare-box h2 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .compare-area-main.section-padding {
+    margin-top: 50px;
+  }
+  .colored-separator {
+    display: block;
+  }
+     /**** end Compare Page  ****/
+  /**** ************** ****/
+  .item-details.top-border .list-item .searchOption {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .item-details.top-border .list-item .searchMaxArea h4 {
+    color: #fff;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
+    padding-top: 12px;
+    padding-left: 0;
+  }
+  .future-section .checkbox-leaders {
+    margin: 0;
+  }
+  .note-section .col-lg-8.col-md-7.col-sm-12 {
+    width: 100%;
+  }
+  .asking-price-section .col-lg-4.col-md-6.col-sm-12 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .col-lg-8.col-md-6.col-sm-12 {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .recomendation {
+    margin-top: 37px;
+  }
+  .sing_up_body {
+    padding: 23px;
+  }
+
+}
+
+@media all and (max-width: 767px) {
+  .selectedTab button {
+    padding: 21px 10px 21px;
+    font-size: 14px;
+    min-width: 120px;
+  }
+  .selectedTab {
+    overflow-x: scroll;
+  }
+  .searchMaxArea {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+  }
+  .usedCarHeader {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 17px;
+  }
+  .counterSingleItemsText h3 {
+    font-size: 30px;
+  }
+  .counterSingleItemsText p {
+    font-size: 13px;
+  }
+  .counterSingleItemsImg i {
+    font-size: 30px;
+  }
+  .counterSingleItems {
+    text-align: center;
+  }
+  .counterMain {
+    padding: 70px 0;
+  }
+  .messagetoleaders h3 {
+    margin-top: 40px;
+  }
+  .heading-child h1 {
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .heading-child-dolor::after {
+    display: none;
+  }
+  .heading-child-dolor {
+    padding: 0px 13px 6px 10px;;
+  }
+  .lolor-sign {
+    font-size: 20px;
+  }
+  .mpr {
+    font-size: 14px;
+  }
+  .bmw-heading {
+    margin-bottom: 30px;
+  }
+  .featurs-items {
+    margin-top: 20px;
+  }
+  .cars-featurs-area h3 {
+    margin-bottom: 0px;
+  }
+
+  .message-dealers-contact-form .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Start dealers page */
+  .leaders-searchArea form {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .leaders-input-area .searchMaxArea {
+    flex-basis: 100%;
+  }
+  .leaders-input-area {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+  }
+  .searchMaxArea.leaders-search-btn {
+    flex-basis: 39%;
+  }
+  .search-leaders-review {
+    flex-direction: column;
+    align-items: inherit;
+  }
+  .search-leaders-review h3 {
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  .child-leaders:nth-child(1) {
+    flex-basis: 15%;
+    display: none;
+  }
+  .child-leaders:nth-child(2) {
+    margin-right: 17px;
+  }
+  .show-numbers p {
+    display: flex;
+  }
+  .show-numbers p br {
+    display: none;
+  }
+  .child-leaders:nth-child(4) {
+    flex-basis: 34.7%;
+    margin-right: 13px;
+    margin-left: 13px;
+  }
+  .show-numbers p span {
+    margin-right: 10px;
+    margin-top: 2px;
+  }
+  .child-leaders:nth-child(5) {
+    display: flex;
+  }
+  .child-leaders:nth-child(2) {
+    margin-right: 5px;
+  }
+  .dealers-cars, .show-numbers {
+    display: flex;
+    justify-content: space-between;
+  }
+  .child-leaders:nth-child(5) {
+    flex-basis: 21%;
+  }
+  /* End dealers page */
+  /* Start blog page  */
+  .blog-box {
+    max-width: 335px;
+    width: auto;
+    margin: 0 auto 50px;
+  }
+  .blog-image .sticky-post {
+    display: none;
+  }
+  .blog-right-md {
+    margin-top: 50px;
+  }
+  .blog-area-main .container, .container-sm {
+    max-width: 668px;
+  }
+  .section-padding{
+    padding: 50px 0;
+  }
+/* End blog page  */
+   /****  Compare Page  ****/
+  /**** ************** ****/
+  .compare-box h2 {
+    text-align: center;
+  }
+  .colored-separator {
+    display: none;
+  }
+  .car-icon {
+    width: 55%;
+    margin: auto;
+  }
+  .compare-box {
+    margin-bottom: 45px;
+  }
+  .compair-list-section{
+    display: none;
+  }
+  .compare-area-main.section-padding {
+    padding-bottom: 0;
+  }
+  .Acurabentlysed {
+    flex-basis: 57%;
+    order: -1;
+  }
+  .Acurabentlydf {
+    padding-left: 25px;
+  }
+  .Acurabently {
+    flex-basis: 42%;
+    padding-left: 25px;
+  }
+  .note-menu ul {
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 0;
+  }
+
+  .stm-registation {
+    flex-direction: column;
+    align-items: start;
+  }
+  .stm-registation.mb-5 p {
+    margin: 8px 0px;
+  }
+
+  .stm-registation.mb-5 {
+    margin-bottom: 0 !important;
+  }
+   /**** start compare Page  ****/
+  /**** ************** ****/
+  .main-add-card-page-area{
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .usedCarArea,
+  .reviewArea,
+  .footerBottom,
+  .footerTop,
+  .searchSelect,
+  .selectedTab,
+  .carArea,
+  .bannerArea,
+  .menu {
+    max-width: 95%;
+    margin: auto;
+    width: 100%;
+  }
+  .footerTop {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .footerBottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 17px;
+  }
+  .UsedCarRight ul {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 14px;
+  }
+  .UsedCarRight ul li p {
+    padding: 9px 16px;
+  }
+  .usedCarHeader {
+    padding-bottom: 20px;
+  }
+  .showallbtn a {
+    padding: 14px 28px 13px;
+    font-size: 13px;
+  }
+  .usedCarMain {
+    padding-bottom: 50px;
+  }
+  .bmw-m5-page-area {
+    padding: 0 15px;
+  }
+  /* Start dealers page  */
+  .search-leaders-review h3 {
+    text-align: center;
+    margin-bottom: 27px;
+    display: none;
+  }
+  .find-dealars-area {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .leaders-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .child-leaders:nth-child(3) {
+    display: none;
+  }
+  .child-leaders:nth-child(4) {
+    padding: 25px 0px;
+  }
+  .displaying-local-area {
+    padding: 0px 15px;
+  }
+  /* End dealers page  */
+/* Start blog page  */
+.blog-area-main {
+  margin-top: 50px;
+}
+.blog-area-main {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+/* End blog page  */
+   /****  Compare Page  ****/
+
+  .car-icon {
+    width: 65%;
+    margin: auto;
+  }
+   /**** start Compare Page  ****/
+   .mainArticle-inventory {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+}

@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <title>Blog</title>
+    <link rel="icon" href="assets/images/logo.png" />
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <!-- Normalize -->
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!--==========================  Start Header Section  ==========================-->
+    <header class="header_main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="header">
+              <div class="headerLeft">
+                <div class="dropdown">
+                  <button
+                    class="btn btn-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Currency(USD) <i class="fa-solid fa-angle-down"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Currency(USD)</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">EUR</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">GBP</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="headerPhone">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-phone"></i
+                      ><span>Top Bar Phone</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-location-dot"></i
+                      ><span>TOP Bar Adress</span></a
+                    >
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><i class="fa-solid fa-clock"></i
+                      ><span>Top Bar Working Hours Label</span></a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="headerProfile">
+                <a href="#">Dealer Profile</a>
+                <a href="#">Seller Profile</a>
+              </div>
+              <div class="headerSocial">
+                <ul>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!--==========================  End Header Section  ==========================-->
+    <div class=""></div>
+    <div class="mainMenu pages-mainMenu" style="background:linear-gradient(to right, rgba(21,62,77, 0.7) 30%, rgba(21, 62, 77, .6)), url(assets/images/header-bg.png) no-repeat scroll center center / 100% 100%";>
+      <img src="assets/images/header-bg.png" />
+      <div class="container">
+        <div class="menu">
+          <div class="logoMenu">
+            <div class="logo">
+              <a href="index.html"><img src="assets/images/logo.svg" /></a>
+            </div>
+            <div class="nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                  <a href="inventory.html">Inventory</a>
+                  <ul>
+                    <li><a href="inventory.html">Inventory Grid View</a></li>
+                    <li><a href="inventory.html">Listing View</a></li>
+                    <li><a href="inventory.html">Sold Inventory</a></li>
+                  </ul>
+                </li>
+                <li><a href="bmw-m5.html">Listing</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li>
+                  <a href="#">Pages</a>
+                  <ul>
+                    <li><a href="blog-page.html">Blog</a></li>
+                    <li><a href="add-car.html">Add Car</a></li>
+                  </ul>
+                </li>
+                <li><a href="dealers-list.html">Dealers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="profileMenuItem">
+            <div class="menuProfile">
+              <a href="compair.html"><i class="fa-solid fa-gauge"></i> <span>0</span></a>
+            </div>
+            <div class="menuProfile menuProfile1">
+              <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+              <form action="" method="POST" class="loginArea">
+                <div class="singleInputLogin">
+                  <label for="email">Login or E-mail</label>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Enter login or E-mail"
+                  />
+                </div>
+                <div class="singleInputLogin">
+                  <label for="pass">Password</label>
+                  <input
+                    type="password"
+                    name="pass"
+                    id="pass"
+                    placeholder="Enter password"
+                  />
+                </div>
+                <div class="form-group form-check checkInput">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
+                  />
+                  <label class="form-check-label" for="exampleCheck1"
+                    >Check me out</label
+                  >
+                </div>
+                <div class="loginAreaBtn">
+                  <button type="submit" class="active">Login</button>
+                  <button type="submit">Sign Up</button>
+                </div>
+              </form>
+            </div>
+            <div class="menuicon">
+              <div class="humberMenu" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </div>
+            </div>
+            <a href="#"><i class="fa-solid fa-car-side"></i> Add your item</a>
+          </div>
+        </div>
+      </div>
+      <div class="menuSiteBarAreaMain">
+        <div class="menuSiteBarAreaText">
+          <div class="menuSite">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Inventory <i class="fa-solid fa-plus"></i></a>
+                <ul>
+                  <li><a href="#">Sub Item</a></li>
+                  <li><a href="#">Sub Item</a></li>
+                  <li><a href="#">Sub Item</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Listing</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Dealers</a></li>
+              <li><a href="#">Compare</a></li>
+            </ul>
+          </div>
+          <div class="siteSocialIcon">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+            </ul>
+          </div>
+          <div class="menuSite2">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Inventory </a>
+              </li>
+              <li><a href="#">Listing</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="mobileLogin">
+        <form action="" method="POST">
+          <div class="singleInputLogin">
+            <label for="email">Login or E-mail</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Enter login or E-mail"
+            />
+          </div>
+          <div class="singleInputLogin">
+            <label for="pass">Password</label>
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="Enter password"
+            />
+          </div>
+          <div class="form-group form-check checkInput">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              id="exampleCheck1"
+            />
+            <label class="form-check-label" for="exampleCheck1"
+              >Check me out</label
+            >
+          </div>
+          <div class="loginAreaBtn">
+            <button type="submit" class="active">Login</button>
+            <button type="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Header area -->
+    <!--==========================  Start Main Section  ==========================-->
+    <main>
+        <!--==========================  Start Blog Section  ==========================-->
+        <div class="blog-area-main section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12">
+                        <div class="blog-main">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+
+                                        <div class="blog-image">
+                                            <a href="#">
+                                                <div class="video-preview">
+                                                    <i class="fas fa-film"></i>Video</div>
+                                                <div class="sticky-post heading-font">Sticky Post</div>
+                                                <img src="assets/images/blog-images/103.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">Tesla Model S: Top Secret Car Collector’s Garage
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>October 18, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i> <span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/104.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        The 2017 Ford F-150 Raptor – A First Look
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/105.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title"> How The Tesla Model X’s Falcon Doors Handle A
+                                                        Tight Parking Space
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/106.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        Nissan vehicles are distributed throughout the United States
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/107.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        Tap yourself on the back for being a savvy car shopper
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/108.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        All colors & trims are always in stock
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/109.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        We strive to deliver a superior experience with Motors Rock!
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/110.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        We believe the cars we offer are the highest quality
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/111.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        How The New Mercedes-Benz SLS AMG on the track
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/112.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        Tap yourself on the back for being a savvy car shopper
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/113.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        Fifth consecutive year that Hyundai is recognized by Ruedas ESPN
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6">
+                                    <div class="blog-box">
+                                        <div class="blog-image">
+                                            <a href="#"><img src="assets/images/blog-images/114.jpg" alt=""></a>
+                                        </div>
+                                        <div class="blog-content">
+                                            <div class="blog-title">
+                                                <a href="#">
+                                                    <h4 class="title">
+                                                        Motors Rock! We strive to deliver a superior experience
+                                                    </h4>
+                                                </a>
+                                            </div>
+                                            <div class="post-meta-bottom">
+                                                <div class="blog-meta-unit">
+                                                    <i class="fa-solid fa-calendar-days"></i>
+                                                    <span>September 23, 2020</span>
+                                                </div>
+                                                <div class="blog-meta-unit comments">
+                                                    <a href="#">
+                                                        <i class="fa-solid fa-comment-dots"></i><span>No Comments</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="stm-blog-pagination">
+                                        <div class="stm-prev-next stm-prev-btn disabled"><i
+                                                class="fas fa-angle-left"></i></div>
+                                        <ul class="page-numbers">
+                                            <li>
+                                                <span aria-current="page" class="page-numbers current">1</span>
+                                            </li>
+                                            <li>
+                                                <a class="page-numbers external" href="#">2
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div class="stm-prev-next stm-next-btn">
+                                            <a href="#" class="external"><i class="fas fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 d-md-none d-lg-block">
+                        <div class="blog-right widget blog-right-md">
+                            <div class="blog-right-input">
+                                <form action="">
+                                    <input type="text">
+                                    <button class="blog-src-btn" type="submit"><i
+                                            class="fa-solid fa-magnifying-glass"></i>
+                                        <div class="color-btn">
+
+                                        </div>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="blog-right widget">
+                            <div class="widget-title">
+                                <h4>TAG WIDGET</h4>
+                            </div>
+                            <div class="tag-list">
+                                <a href="#">Autopilot</a>
+                                <a href="#">Awards</a>
+                                <a href="#">Dealer</a>
+                                <a href="#">Future</a>
+                                <a href="#">Light</a>
+                                <a href="#">Management</a>
+                                <a href="#">Marketing Plan</a>
+                                <a href="#">Motors</a>
+                                <a href="#">Project</a>
+                                <a href="#">Rock</a>
+                                <a href="#">Rock 2</a>
+                                <a href="#">Vehicles</a>
+                            </div>
+                        </div>
+                        <div class="blog-right widget">
+                            <div class="widget-title">
+                                <h4>TEXT WIDGET</h4>
+                            </div>
+                            <div class="blog-right-text">
+                                We know there isn’t much more frustrating than being without your vehicle while it gets
+                                repaired.Are you ready to give your car the service it is asking for? Schedule car
+                                maintenance or repair right here. Our top-notch service staff can get your car or truck
+                                in and out quickly.
+                            </div>
+                        </div>
+                        <div class="blog-right widget">
+                            <div class="widget-title">
+                                <h4>Archives</h4>
+                            </div>
+                            <div class="blog-right-text blog-aa">
+                                <div class="searchMaxArea">
+                                    <select class="js-example-basic-single" name="state">
+                                      <option value="AL">Select Month</option>
+                                      <option value="WY">January 2020</option>
+                                      <option value="hy">February 2020</option>
+                                      <option value="ph">March 2020</option>
+                                      <option value="How">April 2020</option>
+                                      <option value="How">May 2020</option>
+                                      <option value="How"> June 2020</option>
+                                      <option value="How">July 2020 </option>
+                                      <option value="How">August 2020 </option>
+                                      <option value="How"> September 2020</option>
+                                      <option value="How"> Octaber 2020</option>
+                                      <option value="How"> November 2020</option>
+                                      <option value="How">December 2020 </option>
+                                  </select>
+                                </div>
+                                <!-- <select class="js-example-disabled-results select-option">
+                                    <option value="one">Select Month</option>
+                                    <option value="one">January 2020</option>
+                                    <option value="two">February 2020</option>
+                                    <option value="three">March 2020</option>
+                                    <option value="four">April 2020</option>
+                                    <option value="five">May 2020</option>
+                                    <option value="six">June 2020</option>
+                                    <option value="seven">July 2020</option>
+                                    <option value="eight">August 2020</option>
+                                    <option value="nine">September 2020</option>
+                                    <option value="ten">Octaber 2020</option>
+                                    <option value="eleven">November 2020</option>
+                                    <option value="twelve">December 2020</option>
+                                </select>
+                                <div class="color-btn select-clr-btn">
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="blog-right widget">
+                            <div class="widget-title">
+                                <h4>Recent posts</h4>
+                            </div>
+                            <div class="blog-right-text">
+                                <div class="stm-last-post-widget">
+                                    The Tesla Model S isn’t the first truly autonomous car on the road...
+                                    <div class="comments-number">
+                                        <a href="#" class="external"><i class="fa-solid fa-comment-dots"></i>No comments</a>
+                                    </div>
+                                </div>
+                                <div class="stm-last-post-widget">
+                                    The Tesla Model S isn’t the first truly autonomous car on the road...
+                                    <div class="comments-number">
+                                        <a href="#" class="external"><i class="fa-solid fa-comment-dots"></i>No comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--==========================  End Blog Section  ==========================-->
+    </main>
+
+
+    <!--==========================  End Main Section  ==========================-->
+    <!-- Star footer area -->
+    <footer class="footerMain">
+      <div class="container">
+        <div class="footerTop">
+          <div class="footerTopLeft">
+            <form action="" method="post">
+              <input
+                type="text"
+                name="name"
+                placeholder="Enter Make Or Model"
+              />
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </form>
+          </div>
+          <div class="footerTopRight">
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerBottom">
+          <p>Copyright © 2021. Motors – WordPress Theme by StylemixThemes</p>
+          <ul>
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ~~~~~~~~~~ JS Files ~~~~~~~~~~-->
+    <!-- jQuery -->
+
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <!-- Modernizr -->
+    <script src="assets/js/modernizr-3.11.2.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- Custom JS (Handed)-->
+    <script src="assets/js/scripts.js"></script>
+  </body>
+</html>

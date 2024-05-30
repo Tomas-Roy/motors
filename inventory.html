@@ -1,0 +1,2785 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="description" content="" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta property="og:title" content="" />
+      <meta property="og:type" content="" />
+      <meta property="og:url" content="" />
+      <meta property="og:image" content="" />
+      <title>Inventory</title>
+      <link rel="icon" href="assets/images/logo.png" />
+      <!-- Owl Carousel -->
+      <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+      <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+      <!-- Fontawesome -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+         crossorigin="anonymous"
+         referrerpolicy="no-referrer"
+         />
+      <link
+         href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+         rel="stylesheet"
+         />
+      <!-- Normalize -->
+      <link rel="stylesheet" href="assets/css/normalize.css" />
+      <!-- CSS Files -->
+      <link rel="stylesheet" href="assets/css/style.css" />
+      <link rel="stylesheet" href="assets/css/responsive.css" />
+
+
+<style>
+
+
+
+.wrappersees {
+	position: relative;
+	background-color: #ffffff;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+.containersser {
+  position: relative;
+}
+.containersser input[type="range"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  outline: none;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  background-color: transparent;
+  pointer-events: none;
+}
+.slider-track {
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+.containersser input[type="range"]::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 2px;
+}
+.containersser input[type="range"]::-moz-range-track {
+  -moz-appearance: none;
+  height: 2px;
+}
+.containersser input[type="range"]::-ms-track {
+  appearance: none;
+  height: 2px;
+}
+.containersser input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  background-color:black;
+  cursor: pointer;
+  margin-top: -9px;
+  pointer-events: auto;
+  border-radius: 50%;
+}
+.containersser input[type="range"]::-moz-range-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #1bc741;
+  outline: 4px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+  pointer-events: auto;
+  border: none;
+  position: relative;
+}
+/* .containersser input[type="range"]::-moz-range-thumb:after{
+   content: "";
+   position: absolute;
+   width: 10px;
+  height: 10px;
+  top: 50%;
+  left: 50%;
+  margin: -5px 0 0 -5px;
+  border-radius: 50%;
+  background-color: #1bc741;
+} */
+.containersser input[type="range"]::-ms-thumb {
+  appearance: none;
+  height: 1.7em;
+  width: 1.7em;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color:blue;
+  pointer-events: auto;
+}
+.containersser input[type="range"]:active::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: 1px solid #3264fe;
+}
+/* .valuesse {
+  background-color: #3264fe;
+  width: 32%;
+  position: relative;
+  margin: auto;
+  padding: 10px 0;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 25px;
+  color: #ffffff;
+} */
+
+.valuesse {
+	display: flex;
+	justify-content: space-between;
+}
+.samevaluDesign {
+	background-color: #eceff3;
+	flex-basis: 46%;
+	text-align: center;
+}
+.spheading {
+	color: #D0D1D2;
+	font-size: 20px;
+   position: relative;
+}
+.spheading i{
+   position:relative;
+   color: #80808070;
+}
+.plusCol .spheading i{
+   color: #6c98e3;
+}
+.spheading i:after{
+   position: absolute;
+   content: "";
+   width: 3px;
+   height: 0px;
+   top: 50%;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   background:#6c98e3;
+   transform: translateY(-50%);
+   transition: .2s;
+}
+.plusCol .spheading i:after{
+   height: 14px; 
+}
+.values:before {
+  content: "";
+  position: absolute;
+  height: 0;
+  width: 0;
+  border-top: 15px solid #3264fe;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  margin: auto;
+  bottom: -14px;
+  left: 0;
+  right: 0;
+}
+.samevaluDesign {
+	background-color: #eceff3;
+	flex-basis: 46%;
+	text-align: center;
+	margin-top: 22px;
+   padding: 10px 0;
+   font-size: 14px;
+   color: #888888;
+   border: 2px solid #eceff3;
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+   </head>
+   <body>
+      <!--==========================  Start Header Section  ==========================-->
+      <header class="header_main">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="header">
+                     <div class="headerLeft">
+                        <div class="dropdown">
+                           <button
+                              class="btn btn-secondary dropdown-toggle"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              >
+                           Currency(USD) <i class="fa-solid fa-angle-down"></i>
+                           </button>
+                           <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Currency(USD)</a></li>
+                              <li>
+                                 <a class="dropdown-item" href="#">EUR</a>
+                              </li>
+                              <li>
+                                 <a class="dropdown-item" href="#">GBP</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                     <div class="headerPhone">
+                        <ul>
+                           <li>
+                              <a href="#"
+                                 ><i class="fa-solid fa-phone"></i
+                                 ><span>Top Bar Phone</span></a
+                                 >
+                           </li>
+                           <li>
+                              <a href="#"
+                                 ><i class="fa-solid fa-location-dot"></i
+                                 ><span>TOP Bar Adress</span></a
+                                 >
+                           </li>
+                           <li>
+                              <a href="#"
+                                 ><i class="fa-solid fa-clock"></i
+                                 ><span>Top Bar Working Hours Label</span></a
+                                 >
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="headerProfile">
+                        <a href="#">Dealer Profile</a>
+                        <a href="#">Seller Profile</a>
+                     </div>
+                     <div class="headerSocial">
+                        <ul>
+                           <li>
+                              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!--==========================  End Header Section  ==========================-->
+      <div class=""></div>
+      <div class="mainMenu pages-mainMenu" style="background:linear-gradient(to right, rgba(21,62,77, 0.7) 30%, rgba(21, 62, 77, .6)), url(assets/images/header-bg.png) no-repeat scroll center center / 100% 100%";>
+         <img src="assets/images/header-bg.png" />
+         <img src="assets/images/header-bg.png" />
+         <div class="container">
+            <div class="menu">
+               <div class="logoMenu">
+                  <div class="logo">
+                     <a href="index.html"><img src="assets/images/logo.svg" /></a>
+                  </div>
+                  <div class="nav">
+                     <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                           <a href="inventory.html">Inventory</a>
+                           <ul>
+                              <li><a href="inventory.html">Inventory Grid View</a></li>
+                              <li><a href="inventory.html">Listing View</a></li>
+                              <li><a href="inventory.html">Sold Inventory</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="bmw-m5.html">Listing</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li>
+                           <a href="#">Pages</a>
+                           <ul>
+                              <li><a href="blog-page.html">Blog</a></li>
+                              <li><a href="add-car.html">Add Car</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="dealers-list.html">Dealers</a></li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="profileMenuItem">
+                  <div class="menuProfile">
+                     <a href="compair.html"><i class="fa-solid fa-gauge"></i> <span>0</span></a>
+                  </div>
+                  <div class="menuProfile menuProfile1">
+                     <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+                     <form action="" method="POST" class="loginArea">
+                        <div class="singleInputLogin">
+                           <label for="email">Login or E-mail</label>
+                           <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              placeholder="Enter login or E-mail"
+                              />
+                        </div>
+                        <div class="singleInputLogin">
+                           <label for="pass">Password</label>
+                           <input
+                              type="password"
+                              name="pass"
+                              id="pass"
+                              placeholder="Enter password"
+                              />
+                        </div>
+                        <div class="form-group form-check checkInput">
+                           <input
+                              type="checkbox"
+                              class="form-check-input"
+                              id="exampleCheck1"
+                              />
+                           <label class="form-check-label" for="exampleCheck1"
+                              >Check me out</label
+                              >
+                        </div>
+                        <div class="loginAreaBtn">
+                           <button type="submit" class="active">Login</button>
+                           <button type="submit">Sign Up</button>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="menuicon">
+                     <div class="humberMenu" onclick="myFunction(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                     </div>
+                  </div>
+                  <a href="#"><i class="fa-solid fa-car-side"></i> Add your item</a>
+               </div>
+            </div>
+         </div>
+         <div class="menuSiteBarAreaMain">
+            <div class="menuSiteBarAreaText">
+               <div class="menuSite">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li>
+                        <a href="#">Inventory <i class="fa-solid fa-plus"></i></a>
+                        <ul>
+                           <li><a href="#">Sub Item</a></li>
+                           <li><a href="#">Sub Item</a></li>
+                           <li><a href="#">Sub Item</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Listing</a></li>
+                     <li><a href="#">Pricing</a></li>
+                     <li><a href="#">Pages</a></li>
+                     <li><a href="#">Dealers</a></li>
+                     <li><a href="#">Compare</a></li>
+                  </ul>
+               </div>
+               <div class="siteSocialIcon">
+                  <div class="dropdown">
+                     <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Dropdown button <i class="fa-solid fa-angle-down"></i>
+                     </button>
+                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                     </ul>
+                  </div>
+                  <ul>
+                     <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                     <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+                  </ul>
+               </div>
+               <div class="menuSite2">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Inventory </a>
+                     </li>
+                     <li><a href="#">Listing</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="mobileLogin">
+            <form action="" method="POST">
+               <div class="singleInputLogin">
+                  <label for="email">Login or E-mail</label>
+                  <input
+                     type="email"
+                     name="email"
+                     id="email"
+                     placeholder="Enter login or E-mail"
+                     />
+               </div>
+               <div class="singleInputLogin">
+                  <label for="pass">Password</label>
+                  <input
+                     type="password"
+                     name="pass"
+                     id="pass"
+                     placeholder="Enter password"
+                     />
+               </div>
+               <div class="form-group form-check checkInput">
+                  <input
+                     type="checkbox"
+                     class="form-check-input"
+                     id="exampleCheck1"
+                     />
+                  <label class="form-check-label" for="exampleCheck1"
+                     >Check me out</label
+                     >
+               </div>
+               <div class="loginAreaBtn">
+                  <button type="submit" class="active">Login</button>
+                  <button type="submit">Sign Up</button>
+               </div>
+            </form>
+         </div>
+      </div>
+      <div class="margin-top"></div>
+      <!-- Banner area end  -->    
+      <!--========================== start invetory page   ==========================-->
+      <div class="mainArticle-inventory">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3">
+                  <div class="serchMenuButton">
+                     <a href="#"><i class="fa-solid fa-car-rear"></i> <span> Search Options</span></a>
+                  </div>
+                  <div class="search-option-inventorys">
+                     <div class="searchOptionHeading">
+                        <h3>Search Options</h3>
+                        <div class="headeingIcons">
+                           <i class="fa-solid fa-car-rear"></i>
+                        </div>
+                     </div>
+                     <div class="control-inventory-area">
+                        <div class="coinChild">
+                           <div class="singleInventorySearchInput">
+                              <select class="area js-example-basic-single" name="state">
+                                 <option value="condition ">Conditions</option>
+                                 <option value="Certified Used">Certified Used</option>
+                                 <option value="used">Used</option>
+                                 <option value="new">New</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="coinChild">
+                           <div class="singleInventorySearchInput">
+                              <select class="area js-example-basic-single" name="state">
+                                 <option value="condition ">Body</option>
+                                 <option value="Wagon">Wagon</option>
+                                 <option value="Convertible">Convertible</option>
+                                 <option value="Minivan">Minivan</option>
+                                 <option value="Compact">Compact</option>
+                                 <option value="Coupe">Coupe</option>
+                                 <option value="Pickups">Pickups</option>
+                                 <option value="sport car">Sport car</option>
+                                 <option value="Hatchback">Hatchback</option>
+                                 <option value="Suv">Suv</option>
+                                 <option value="off read">Off Road</option>
+                                 <option value="Sedan">Sedan</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="coinChild">
+                           <div class="singleInventorySearchInput">
+                              <select class="area js-example-basic-single" name="state">
+                                 <option value="make">Make</option>
+                                 <option value="tesla">Tesla</option>
+                                 <option value="Mercedes">Mercedes</option>
+                                 <option value="lexus">Lexus</option>
+                                 <option value="lamborghini">Lamborghini</option>
+                                 <option value="bentley">Bentley</option>
+                                 <option value="acura">Acura</option>
+                                 <option value="kia">Kia</option>
+                                 <option value="hundai">Hundai</option>
+                                 <option value="mazda">Mazda</option>
+                                 <option value="toyta">toyta</option>
+                                 <option value="ford">Ford</option>
+                                 <option value="Hundu">Hundu</option>
+                                 <option value="bmw">Bmw</option>
+                                 <option value="nissan">chevrolet</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="coinChild">
+                           <div class="singleInventorySearchInput">
+                              <select class="area js-example-basic-single" name="state">
+                                 <option value="make">Modal</option>
+                                 <option value="1-series">1 Series</option>
+                                 <option value="Mercedes">RDX</option>
+                                 <option value="Malibo">Malibo</option>
+                                 <option value="modal x">Modal-x</option>
+                                 <option value="mustang">Mustang</option>
+                                 <option value="mx-5">MX-5</option>
+                                 <option value="pilot">Pilot</option>
+                                 <option value="rx-350">Rx-350</option>
+                                 <option value="rio">Rio</option>
+                                 <option value="m440i">M440i</option>
+                                 <option value="sorento">Sorento</option>
+                                 <option value="soul">Soul</option>
+                                 <option value="suborban">suborban</option>
+                                 <option value="tacoma">Tacoma</option>
+                                 <option value="tacoma">chetacoma</option>
+                                 <option value="tacoma">Trailblazer</option>
+                                 <option value="tacoma">Tucson</option>
+                                 <option value="tacoma">Urus</option>
+                                 <option value="tacoma">velostor</option>
+                                 <option value="tacoma">Versa</option>
+                                 <option value="tacoma">M5</option>
+                                 <option value="tacoma">Hurcan</option>
+                                 <option value="tacoma">Is 250c</option>
+                                 <option value="tacoma">Camry</option>
+                                 <option value="tacoma">370z</option>
+                                 <option value="tacoma">5 Active</option>
+                                 <option value="tacoma">Accord</option>
+                                 <option value="tacoma">Accord 2021</option>
+                                 <option value="tacoma">Altima</option>
+                                 <option value="tacoma">Hvalon</option>
+                                 <option value="tacoma">Ben tayaga</option>
+                                 <option value="tacoma">C- Class</option>
+                                 <option value="tacoma">X7</option>
+                                 <option value="tacoma">ILX</option>
+                                 <option value="tacoma">Civic</option>
+                                 <option value="tacoma">Cvr</option>
+                                 <option value="tacoma">Cx-5</option>
+                                 <option value="tacoma">Explorer</option>
+                                 <option value="tacoma">Flying Super</option>
+                                 <option value="tacoma">3 series</option>
+                                 <option value="tacoma">Cruze</option>
+                                 <option value="tacoma">focus</option>
+                                 <option value="tacoma">Sllverado</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="coinChild">
+                           <div class="singleInventorySearchInput">
+                              <select class="area js-example-basic-single" name="state">
+                                 <option value="transmission">Transmission</option>
+                                 <option value="semi-automation">Semi-automation</option>
+                                 <option value="automation">Automation</option>
+                                 <option value="manual">Manual</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="coinChild">
+                           <div class="singleInventorySearchInput">
+                              <select class="area js-example-basic-single" name="state">
+                                 <option value="Max-year">Max-Year</option>
+                                 <option value="2000-2005">2000 - 2005</option>
+                                 <option value="2000-2005">2006 - 2007</option>
+                                 <option value="2000-2005">2008 - 2009</option>
+                                 <option value="2000-2005">2010 - 2011</option>
+                                 <option value="2000-2005">2012 - 2013</option>
+                                 <option value="2000-2005">2014 - 2015</option>
+                                 <option value="2000-2005">2016 - 2017</option>
+                                 <option value="2000-2005">2018 - 2019</option>
+                                 <option value="2000-2005">2020 - 2021</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="coinChild">
+                           <div class="singleInventorySearchInput">
+                              <select class="area js-example-basic-single" name="state">
+                                 <option value="Max-mileage">Max Mileage</option>
+                                 <option value="0-1000">0 - 1000</option>
+                                 <option value="1000-5000">1000 - 5000</option>
+                                 <option value="5000-10000">5000 - 10000</option>
+                                 <option value="10000-15000">10000 - 15000</option>
+                                 <option value="15000-20000">15000 - 20000</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="coinChild">
+                           <div class="singleInventorySearchInput">
+                              <select class="area js-example-basic-single" name="state">
+                                 <option value="List Status">List Status</option>
+                                 <option value="active">Active</option>
+                                 <option value="sold">Sold</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="coinChild youLocation">
+                           <input type="text" placeholder="Any location">
+                           <div class="addressIcon"><i class="fa-solid fa-location-dot"></i></div>
+                        </div>
+                        <div class="coinChild  coinChild">
+                           <div class="coinChild">
+                              <div class="singleInventorySearchInput">
+                                 <select class="area js-example-basic-single" name="state">
+                                    <option value="Max-mileage">Aditiona Feature</option>
+                                    <option value="0-1000">Motors </option>
+                                    <option value="1000-5000">Vehicals</option>
+                                    <option value="5000-10000">Wearing</option>
+                                    <option value="10000-15000">Testing Engine</option>
+                                    <option value="15000-20000">15000 offers</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="searhCarsChoose">
+                           <label for="sear">Search by keywords</label>
+                           <input type="text" id="sear" placeholder="Search">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="countAccordion">
+                     <div class="selectPrice-area">
+                        <div class="selectPriHeadingg">
+                           <h3>Select Price</h3>
+                           <div class="spheading">
+                              <i class="fa-solid fa-minus"></i>
+                           </div>
+
+                        </div>
+
+
+                        
+                        <div class="wrappersees">
+                           <div class="containersser">
+                             <div class="slider-track"></div>
+                             <input class="senderlrigjkdflg" type="range" min="0" max="300000" value="0" id="slider-1" oninput="slideOne()">
+                             <input class="senderlrigjkdflg" type="range" min="0" max="300000" value="300000" id="slider-2" oninput="slideTwo()">
+                           </div>
+
+
+                           <div class="valuesse">
+                             <span class="samevaluDesign" id="range1">
+                               0
+                             </span>
+
+                             <span class="samevaluDesign" id="range2">
+                               100
+                             </span>
+                           </div>
+
+                         </div>
+                       
+
+
+
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-9">
+                  <div class="inventory-search-area">
+                     <div class="cars-of-sels">
+                        <h1>Cars for sale</h1>
+                     </div>
+                     <div class="sels-short-search">
+                        <div class="short-labelss">
+                           <label for="">Sort by:</label>
+                           <div class="shortbyserch">
+                              <div class="searchMaxArea">
+                                 <select class="js-example-basic-single" name="state">
+                                    <option value="AL">Choose model</option>
+                                    <option value="WY">Acura(2)</option>
+                                    <option value="hy">Bentley(2)</option>
+                                    <option value="ph">BMW(2)</option>
+                                    <option value="How">Chevrolet(7)</option>
+                                    <option value="How">Ford(5)</option>
+                                 </select>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="borderAllde">
+                           <div class="grid-search">
+                              <a href="#"><i class="fa-solid fa-border-all"></i></a>
+                           </div>
+                           <div class="list-search-bar">
+                              <a href="#"><i class="fa-solid fa-list-ul"></i></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="featured-clasic">
+                     <h3>Featured Classified</h3>
+                     <a href="#"> Show all</a>
+                  </div>
+                  <!-- =========================== Start Car details -->
+                  <div class="selfishdkfje">
+                                       
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/thumbnail/thum1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">Mercedes C-Class </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$18 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Gasoline </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">18000 mi  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Boston, MA,  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/Corvina.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/companis.png" alt="image not found">
+                           </div>
+                        </div>
+
+                        <div class="Viewmoreserdflv">
+                           <a href="#">View more</a>
+                        </div>
+                     
+                     </div>
+                  </div>
+
+                  
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/car/4.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">BMW M5 </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$25 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Hybrid </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">1800  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                          
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-bucket"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/leaders/leaders3.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+      
+                        </div>
+
+                        <div class="Viewmoreserdflv">
+                           <a href="#">View more</a>
+                        </div>
+                     
+                     </div>
+                  </div>
+
+                                    
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/thumbnail/thum1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">Mercedes C-Class </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$18 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Gasoline </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">18000 mi  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Boston, MA,  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/Corvina.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/companis.png" alt="image not found">
+                           </div>
+                        </div>
+                        <div class="Viewmoreserdflv">
+                           <a href="#">View more</a>
+                        </div>
+                     
+                     </div>
+                  </div>
+
+    
+                
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/car/2.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">BMW M5 </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$25 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Hybrid </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">1800  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                          
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-bucket"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/leaders/leaders2.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/conister.png" alt="image not found">
+                           </div>
+      
+                        </div>
+
+                        <div class="Viewmoreserdflv">
+                           <a href="#">View more</a>
+                        </div>
+                     
+                     </div>
+                  </div>
+
+
+                  <div class="detailderrler">
+
+
+                        
+
+                   
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/thumbnail/thum1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">Mercedes C-Class </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$18 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Gasoline </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">18000 mi  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Boston, MA,  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/Corvina.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/companis.png" alt="image not found">
+                           </div>
+                        </div>
+
+                        <div class="Viewmoreserdflv">
+                           <a href="#">View more</a>
+                        </div>
+                     
+                     </div>
+                  </div>
+
+                     
+
+
+
+               
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/car/3.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">BMW M5 </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$25 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Hybrid </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">1800  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                          
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-bucket"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/leaders/leaders2.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/conister.png" alt="image not found">
+                           </div>
+      
+                        </div>
+                     
+                     </div>
+                     <div class="Viewmoreserdflv">
+                        <a href="#">View more</a>
+                     </div>
+                  </div>
+
+                  
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/thumbnail/thum1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">Mercedes C-Class </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$18 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Gasoline </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">18000 mi  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Boston, MA,  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/Corvina.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/companis.png" alt="image not found">
+                           </div>
+                        </div>
+                     
+                     </div>
+
+                                             <div class="Viewmoreserdflv">
+                           <a href="#">View more</a>
+                        </div>
+                  </div>
+
+                  
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/car/4.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">BMW M5 </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$25 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Hybrid </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">1800  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                          
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-bucket"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/leaders/leaders3.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+      
+                        </div>
+                     
+                     </div>
+                     <div class="Viewmoreserdflv">
+                        <a href="#">View more</a>
+                     </div>
+                  </div>
+
+                                    
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/thumbnail/thum1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">Mercedes C-Class </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$18 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Gasoline </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">18000 mi  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Boston, MA,  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/Corvina.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/companis.png" alt="image not found">
+                           </div>
+                        </div>
+                     
+                     </div>
+
+                     <div class="Viewmoreserdflv">
+                        <a href="#">View more</a>
+                     </div>
+                  </div>
+
+    
+                
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/car/2.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">BMW M5 </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$25 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Hybrid </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">1800  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                          
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-bucket"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/leaders/leaders2.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/conister.png" alt="image not found">
+                           </div>
+      
+                        </div>
+                     
+                     </div>
+                     <div class="Viewmoreserdflv">
+                        <a href="#">View more</a>
+                     </div>
+                  </div>
+
+
+                   
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/thumbnail/thum1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">Mercedes C-Class </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$18 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Gasoline </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">18000 mi  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Boston, MA,  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/Corvina.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/companis.png" alt="image not found">
+                           </div>
+                        </div>
+                     
+                     </div>
+                     <div class="Viewmoreserdflv">
+                        <a href="#">View more</a>
+                     </div>
+                  </div>
+
+                     
+
+
+
+               
+                  <div class="car-details-area">
+                     <div class="detailsCarimg">
+                        <div class="usedCarSingleItem">
+                           <div class="usedCarSingleItemImg">
+                              <div class="usedCamara">
+                                 <i class="fa-solid fa-camera"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedCamara2">
+                                 <i class="fa-solid fa-film"></i>
+                                 <span>4</span>
+                              </div>
+                              <div class="usedSiteAngle">
+                                 <span>Special</span>
+                              </div>
+                              <div class="slider-container" data-slider="2">
+                                 <div class="minimain">
+                                    <div class="mini active" data-index="0"></div>
+                                    <div class="mini" data-index="1"></div>
+                                    <div class="mini" data-index="2"></div>
+                                    <div class="mini" data-index="3"></div>
+                                    <div class="mini" data-index="4"></div>
+                                 </div>
+                                 <ul class="hoverslider">
+                                    <li class="active">
+                                       <img
+                                          src="assets/images/car/3.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/1.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/6.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/7.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                    <li>
+                                       <img
+                                          src="assets/images/car/8.jpg"
+                                          alt=""
+                                          height="163"
+                                          width="282"
+                                          />
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="starUsedCar">
+                                 <i class="fa-regular fa-star"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="carImageArea">
+                        <div class="lseidgldfis">
+                           <div class="carihfgrfgueir">
+                              <p><a href="#">NEW</a></p>
+                              <h3><a href="#">BMW M5 </a> </h3>
+                           </div>
+                           <div class="newbmwheading">
+                              <div class="heading-child-dolor">
+                                 <div class="dolor-throw">
+                                     <span class="white-dolor">Buy for</span>
+                                     <span class="dolor-throw"> $27 000</span>
+                                 </div>
+                                 <div class="lolor-mpr">
+                                     <div class="mpr">MSRP</div>
+                                     <div class="lolor-sign">$25 500</div>
+                                 </div>
+                             </div>
+                           </div>
+                        </div>
+                        <div class="anibodsfkj">
+
+                           <div class="sodmfneif dfnotie">
+                              <span class="DIcon"><i class="fa-solid fa-gas-pump"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">Hybrid </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-road"></i></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">1800  </span>
+                              </div>
+                           </div>
+                           
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-location-dot"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                          
+                           <div class="sodmfneif">
+                              <span class="DIcon"><i class="fa-solid fa-bucket"></i></span>
+                              <div class="fuelPump">
+                                 <span class="Gfuelpump">Fuel type</span><br>
+                                 <span class="gasoline">
+                                    100 mi  </span>
+                              </div>
+                           </div>
+
+                        </div>
+                        <div class="condionLogos">
+                           <div class="spontsrtfloretfgregin">
+                              <div class="iuner">
+                                 <a href="#"><img src="assets/images/leaders/leaders2.png" alt="image not found"></a>
+                              </div>
+                              <div class="westConiva">
+                                 <p><a href="#">West Covina Motors</a></p>
+                                 <div class="seventstar">
+                                    <div class="shnumbe"><i class="fa-solid fa-phone"></i><span>(71*******</span></div>
+                                    <a href="#">Show number</a>
+                                 </div>
+                              </div>
+
+                              <div class="wheelsarehjga">
+                                 <a href="#"><i class="fa-solid fa-dharmachakra"></i><span>Test Drive </span></a>
+                              </div>
+                              
+                           </div>
+                        </div>
+                        <div class="addtocompate">
+                           <div class="wheelsarehjga">
+                              <a href="#"><i class="fa-solid fa-icons"></i><span> Add to compare </span></a>
+                           </div>
+                           <div class="signimage">
+                              <img src="assets/images/conister.png" alt="image not found">
+                           </div>
+      
+                        </div>
+                     
+                     </div>
+
+                     <div class="Viewmoreserdflv">
+                        <a href="#">View more</a>
+                     </div>
+                  </div>
+
+
+
+
+
+
+
+                  </div>
+
+                  <div class="emtpagination">
+                     <a class="disableee" href="#">1</a>
+                     <a class="enablesss" href="#">3</a>
+                     <a class="enablesss" href="#">2</a>
+                     <a class="englesithe" href=""><i class="fas fa-angle-right"></i></a>
+                  </div>
+                  </div>
+                  
+                  <!-- =========================== End Car details -->
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+
+      <!--========================== end inventory page   ==========================-->
+      <footer class="footerMain">
+         <div class="container">
+            <div class="footerTop">
+               <div class="footerTopLeft">
+                  <form action="" method="post">
+                     <input
+                        type="text"
+                        name="name"
+                        placeholder="Enter Make Or Model"
+                        />
+                     <button type="submit">
+                     <i class="fa-solid fa-magnifying-glass"></i>
+                     </button>
+                  </form>
+               </div>
+               <div class="footerTopRight">
+                  <ul>
+                     <li><a href="#">Help</a></li>
+                     <li><a href="#">About Us</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="footerBottom">
+               <p>Copyright © 2021. Motors – WordPress Theme by StylemixThemes</p>
+               <ul>
+                  <li>
+                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </footer>
+      <!-- ~~~~~~~~~~ JS Files ~~~~~~~~~~-->
+      <!-- jQuery -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+      <!-- Bootstrap -->
+      <script src="assets/js/bootstrap.min.js"></script>
+      <!-- Owl Carousel -->
+      <script src="assets/js/owl.carousel.min.js"></script>
+      <!-- Modernizr -->
+      <script src="assets/js/modernizr-3.11.2.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+      <!-- Custom JS (Handed)-->
+      <script src="assets/js/scripts.js"></script>
+
+
+
+
+      <script>
+
+
+         window.onload = function () {
+           slideOne();
+           slideTwo();
+         };
+         
+         let sliderOne = document.getElementById("slider-1");
+         let sliderTwo = document.getElementById("slider-2");
+         let displayValOne = document.getElementById("range1");
+         let displayValTwo = document.getElementById("range2");
+         let minGap = 0;
+         let sliderTrack = document.querySelector(".slider-track");
+         let sliderMaxValue = document.getElementById("slider-1").max;
+         
+         function slideOne() {
+           if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+             sliderOne.value = parseInt(sliderTwo.value) - minGap;
+           }
+           displayValOne.textContent = sliderOne.value;
+           fillColor();
+         }
+         function slideTwo() {
+           if (parseInt(sliderTwo.value) - parseInt(sliderOne.value) <= minGap) {
+             sliderTwo.value = parseInt(sliderOne.value) + minGap;
+           }
+           displayValTwo.textContent = sliderTwo.value;
+           fillColor();
+         }
+         function fillColor() {
+           percent1 = (sliderOne.value / sliderMaxValue) * 100;
+           percent2 = (sliderTwo.value / sliderMaxValue) * 100;
+           sliderTrack.style.background = `linear-gradient(to right, #dadae5 ${percent1}% , #1bc741 ${percent1}% , #1bc741 ${percent2}%, #dadae5 ${percent2}%)`;
+         }
+         
+             </script>
+
+
+
+
+
+   </body>
+</html>

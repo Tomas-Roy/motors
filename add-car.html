@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:title" content="" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <title>add-car</title>
+  <link rel="icon" href="assets/images/logo.png" />
+
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <!-- jquery ui theme css  -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"
+/>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="assets/css/normalize.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+
+<body>
+  <!--==========================  Start Header Section  ==========================-->
+  <header class="header_main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="header">
+            <div class="headerLeft">
+              <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Currency(USD) <i class="fa-solid fa-angle-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Currency(USD)</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">EUR</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">GBP</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="headerPhone">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-solid fa-phone"></i><span>Top Bar Phone</span></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-location-dot"></i><span>TOP Bar Adress</span></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-clock"></i><span>Top Bar Working Hours Label</span></a>
+                </li>
+              </ul>
+            </div>
+            <div class="headerProfile">
+              <a href="#">Dealer Profile</a>
+              <a href="#">Seller Profile</a>
+            </div>
+            <div class="headerSocial">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--==========================  End Header Section  ==========================-->
+  <div class=""></div>
+  <div class="mainMenu pages-mainMenu"
+    style="background:linear-gradient(to right, rgba(21,62,77, 0.7) 30%, rgba(21, 62, 77, .6)), url(assets/images/header-bg.png) no-repeat scroll center center / 100% 100%"
+    ;>
+    <img src="assets/images/header-bg.png" />
+    <img src="assets/images/header-bg.png" />
+    <div class="container">
+      <div class="menu">
+        <div class="logoMenu">
+          <div class="logo">
+            <a href="index.html"><img src="assets/images/logo.svg" /></a>
+          </div>
+          <div class="nav">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="inventory.html">Inventory</a>
+                <ul>
+                  <li><a href="inventory.html">Inventory Grid View</a></li>
+                  <li><a href="inventory.html">Listing View</a></li>
+                  <li><a href="inventory.html">Sold Inventory</a></li>
+                </ul>
+              </li>
+              <li><a href="bmw-m5.html">Listing</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li>
+                <a href="#">Pages</a>
+                <ul>
+                  <li><a href="blog-page.html">Blog</a></li>
+                  <li><a href="add-car.html">Add Car</a></li>
+                </ul>
+              </li>
+              <li><a href="dealers-list.html">Dealers</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="profileMenuItem">
+          <div class="menuProfile">
+            <a href="compair.html"><i class="fa-solid fa-gauge"></i> <span>0</span></a>
+          </div>
+          <div class="menuProfile menuProfile1">
+            <a href="#"><i class="fa-solid fa-circle-user"></i></a>
+            <form action="" method="POST" class="loginArea">
+              <div class="singleInputLogin">
+                <label for="email">Login or E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Enter login or E-mail" />
+              </div>
+              <div class="singleInputLogin">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Enter password" />
+              </div>
+              <div class="form-group form-check checkInput">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <div class="loginAreaBtn">
+                <button type="submit" class="active">Login</button>
+                <button type="submit">Sign Up</button>
+              </div>
+            </form>
+          </div>
+          <div class="menuicon">
+            <div class="humberMenu" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
+          <a href="#"><i class="fa-solid fa-car-side"></i> Add your item</a>
+        </div>
+      </div>
+    </div>
+    <div class="menuSiteBarAreaMain">
+      <div class="menuSiteBarAreaText">
+        <div class="menuSite">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Inventory <i class="fa-solid fa-plus"></i></a>
+              <ul>
+                <li><a href="#">Sub Item</a></li>
+                <li><a href="#">Sub Item</a></li>
+                <li><a href="#">Sub Item</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Listing</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Pages</a></li>
+            <li><a href="#">Dealers</a></li>
+            <li><a href="#">Compare</a></li>
+          </ul>
+        </div>
+        <div class="siteSocialIcon">
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown button <i class="fa-solid fa-angle-down"></i>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-google-plus"></i></a></li>
+          </ul>
+        </div>
+        <div class="menuSite2">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Inventory </a>
+            </li>
+            <li><a href="#">Listing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="mobileLogin">
+      <form action="" method="POST">
+        <div class="singleInputLogin">
+          <label for="email">Login or E-mail</label>
+          <input type="email" name="email" id="email" placeholder="Enter login or E-mail" />
+        </div>
+        <div class="singleInputLogin">
+          <label for="pass">Password</label>
+          <input type="password" name="pass" id="pass" placeholder="Enter password" />
+        </div>
+        <div class="form-group form-check checkInput">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <div class="loginAreaBtn">
+          <button type="submit" class="active">Login</button>
+          <button type="submit">Sign Up</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="margin-top"></div>
+  <!-- Banner area end  -->
+  <div class="main-add-card-page-area">
+      
+  <!--========================== start add-car page   ==========================-->
+  <!-- section start-->
+  <section class="motors-desc-slots-wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="biuld-box">
+            <h3>Build Your Ad</h3>
+            <p><span>You are currently building a Free Ad.</span></p>
+            <p><strong>Items marked with * are required fields.</strong></p>
+          </div>
+
+          <div class="stm_add_car_form mb-5">
+            <p class="p-color">Enter your VIN to Import vehicle details</p>
+            <form action="" method="post" class="d-flex">
+              <input type="text" class="vin " required="" placeholder="Enter VIN....">
+              <button id="checkVin " class="checkVin mx-5">
+                APPLY </button>
+            </form>
+          </div>
+          <div class="item-details top-border">
+            <div class="item-details-heading ">
+              Listing Item Details
+            </div>
+            <div class="list-item">
+              <div class="searchOption">
+
+                <div class="searchMaxArea">
+                  <h4>Make* </h4>
+                  <select class="js-example-basic-single" name="state">
+                    <option value="AL">Select make</option>
+                    <option value="WY">Acura(2)</option>
+                    <option value="hy">Bentley(2)</option>
+                    <option value="ph">BMW(2)</option>
+                    <option value="How">Chevrolet(7)</option>
+                    <option value="How">Ford(5)</option>
+                  </select>
+                </div>
+                <div class="searchMaxArea">
+                  <h4>Model* </h4>
+                  <select class="area js-example-basic-single" name="state">
+                    <option value="AL">Select Model</option>
+                    <option value="WY">Acura</option>
+                    <option value="hy">Bentley</option>
+                  </select>
+                </div>
+                <div class="searchMaxArea">
+                  <h4>Body* </h4>
+                  <select class="area js-example-basic-single" name="state">
+                    <option value="AL">Select Body</option>
+                    <option value="WY">Convertible</option>
+                    <option value="hy">Coupe</option>
+                    <option value="hy">Off-Road</option>
+                    <option value="hy">Minivan</option>
+                    <option value="hy">Sport Cars</option>
+                  </select>
+                </div>
+                <div class="searchMaxArea">
+                  <h4>Year*</h4>
+                  <select class="area js-example-basic-single" name="state">
+                    <option value="AL">Select year</option>
+                    <option value="WY">2020</option>
+                    <option value="hy">2021</option>
+                    <option value="hy">2022</option>
+                    <option value="hy">2023</option>
+                    <option value="hy">2024</option>
+                  </select>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section start-->
+  <section class="transmission">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabentlydf">
+              <div class="stm-label"><i class="fa-solid fa-microchip"></i><span class="transmissionsd"> Transmission</span></div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <select class="js-example-basic-single" name="state">
+                  <option value="AL">Select make</option>
+                  <option value="WY">Acura(2)</option>
+                  <option value="hy">Bentley(2)</option>
+                  <option value="ph">BMW(2)</option>
+                  <option value="How">Chevrolet(7)</option>
+                  <option value="How">Ford(5)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabentlydf">
+              <div class="stm-label"><i class="fa-solid fa-gas-pump"></i> Fuel type </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <select class="js-example-basic-single" name="state">
+                  <option value="AL">Select make</option>
+                  <option value="WY">Acura(2)</option>
+                  <option value="hy">Bentley(2)</option>
+                  <option value="ph">BMW(2)</option>
+                  <option value="How">Chevrolet(7)</option>
+                  <option value="How">Ford(5)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabently">
+              <div class="stm-label"><i class="fa-solid fa-caravan"></i> Engine </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <input type="number" name="" class="stm-label-input" placeholder="Enter Engine ">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabently">
+              <div class="stm-label"><i class="fa-solid fa-road"></i> Mileage </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <input type="number" name="" class="stm-label-input" placeholder="Enter Mileage (mi)">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabentlydf">
+              <div class="stm-label"><i class="fa-solid fa-gear"></i> Drive </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <select class="js-example-basic-single" name="state">
+                  <option value="AL">Select make</option>
+                  <option value="WY">Acura(2)</option>
+                  <option value="hy">Bentley(2)</option>
+                  <option value="ph">BMW(2)</option>
+                  <option value="How">Chevrolet(7)</option>
+                  <option value="How">Ford(5)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabentlydf">
+              <div class="stm-label"><i class="fa-solid fa-palette"></i> Exterior Color </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <select class="js-example-basic-single" name="state">
+                  <option value="AL">Select make</option>
+                  <option value="WY">Acura(2)</option>
+                  <option value="hy">Bentley(2)</option>
+                  <option value="ph">BMW(2)</option>
+                  <option value="How">Chevrolet(7)</option>
+                  <option value="How">Ford(5)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabentlydf">
+              <div class="stm-label"><i class="fa-solid fa-palette"></i> Interior Color </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <select class="js-example-basic-single" name="state">
+                  <option value="AL">Select make</option>
+                  <option value="WY">Acura(2)</option>
+                  <option value="hy">Bentley(2)</option>
+                  <option value="ph">BMW(2)</option>
+                  <option value="How">Chevrolet(7)</option>
+                  <option value="How">Ford(5)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabently">
+              <div class="stm-label"><i class="fa-solid fa-key"></i> Registered </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+               <div class="dateTimePk">
+                <div class="singleInputSearch">
+                  <input
+                    type="text"
+                    id="datepicker"
+                    class="datepicker"
+                    name="second"
+                    placeholder="EnterA destination or place of interest"
+                  />
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabently">
+              <div class="stm-label"><i class="fa-solid fa-clipboard-check"></i> VIN </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <input type="text" name="" class="stm-label-input" placeholder="Enter VIN">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabently">
+              <div class="stm-label"><i class="fa-solid fa-clock-rotate-left"></i> History </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control hisCallstroude">
+                    <div class="apply-popup">
+                      <div class="aphistory">
+                          <h5>Vehicle history</h5>
+                          <span class="apClosst"><i class="fa-solid fa-xmark"></i></span>
+                      </div>
+                      <div class="checkapsito">
+
+                        <div class="appchekdoif">
+                          <input type="radio" id="featured-1" name="myRadioButton" value=" Carfax" ><label for="featured-1"> Carfax</label>
+                        </div>
+
+                        <div class="appchekdoif">
+                          <input  class="righicheckklfd"  type="radio" id="featured-2" name="myRadioButton" value="  AutoCheck" ><label for="featured-2"> AutoCheck</label>
+                        </div>
+
+                      </div>
+                      <div class="inpserethis">
+                          <input type="text" placeholder="Insert link">
+                      </div>
+                      <div class="appbtngoup">
+                        <input type="button" onClick="getRadioButtonValue();" value="Apply">
+                      </div>
+                  </div>
+                <input type="text" name="story" class="stm-label-input" placeholder="Vehicle History Report"  id="myTextBoxResult" >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section start-->
+  <section class="location controldsdfelocation">
+    <div class="container">
+      <div class="row">
+        <div class="location-header top-border">
+          <h3>Listing item Location</h3>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabently">
+              <div class="stm-label"><i class="fa-solid fa-location-dot"></i>  Location  </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <input type="text" name="" class="stm-label-input" placeholder="Enter ZIP or Address">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabently">
+              <div class="stm-label"><i class="fa-solid fa-location-dot"></i> Latitude </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <input type="text" name="" class="stm-label-input" placeholder="Enter Latitude">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 g-5">
+          <div class="ldfosifkji">
+            <div class="Acurabently">
+              <div class="stm-label"><i class="fa-solid fa-location-dot"></i> Longitude </div>
+            </div>
+            <div class="Acurabentlysed">
+              <div class="searchMaxArea stm-control">
+                <input type="text" name="" class="stm-label-input" placeholder="Enter Longitude">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-12">
+          <div class="stm-link d-flex justify-content-end mb-3">
+            <a href="https://www.latlong.net/" target="_blank" rel="nofollow">Lat and Long Finder</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section start-->
+  <section class="future-section">
+    <div class="container">
+      <div class="row">
+        <div class="future future-title top-border">
+          <h4>Select Your Listing Features</h4>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="future-sub-title">
+            Comfort
+          </div>
+          <div class="future-deatils">
+            <ul>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p> A/C: Front</p>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>  Backup Camera</p>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p> Cruise Control</p>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>Navigation</p>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="future-sub-title">
+            Entertainment
+          </div>
+          <div class="future-deatils">
+            <ul>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>MP3 Player</p>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p> Premium Audio</p>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>AM/FM Stereo</p>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>DVD System</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="future-sub-title">
+            Safety
+          </div>
+          <div class="future-deatils">
+            <ul>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>Airbag: Driver </p>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>Airbag: Passenger </p>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p> Security System </p>
+                </div>
+              </li>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>Antilock Brakes </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="future-sub-title">
+            Seats
+          </div>
+          <div class="future-deatils">
+            <ul>
+              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p> Heated Seats  </p>
+                </div>
+              </li>              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>Power Seats </p>
+                </div>
+              </li>              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>Bucket Seats </p>
+                </div>
+              </li>              <li>
+                <div class="checkbox-leaders">
+                  <label class="control control--checkbox"><span class="acceptcheck">
+                    <input type="checkbox">
+                    <div class="control__indicator"></div>
+                  </label>
+                </div>
+                <div class="chipSmicros">
+                  <p>Safety Memory Seats </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section start-->
+  <section class="upload-photo-section">
+    <div class="container">
+      <div class="row">
+        <div class="upload-photo-header top-border">
+          <h4>Upload photo</h4>
+          <h5>RECOMMENDATION & GUIDES</h5>
+        </div>
+        <div class="upload-deatils">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam mollis convallis semper. Proin risus
+            felis, mollis at augue non, tincidunt eleifend ipsum.</p>
+          <p>Recomended Image Resolution: 800 x 470 px or higher</p>
+          <p>Pellentesque non lorem auctor sem commodo blandit. Vestibulum posuere sit amet mi quis luctus. Proin
+            placerat purus metus, vel consequat tellus efficitur vel.</p>
+          <p>User can upload up to 5 photos, but dealer can upload up to 10 photos.</p>
+          <p>elementum, in vulputate nunc maximus. Nulla egestas blandit laoreet. Nam egestas odio non nisi ullamcorper
+            convallis. Sed eu consectetur orci. Cras vulputate nisl sapien, vitae rhoncus est aliquet sit amet.</p>
+        </div>
+        <div class="upload-photo">
+          <div class="upload-icon">
+
+           <div class="wrappersefile">
+            <label for="photoLoad" class="uploadLabel">
+              <input type="file" id="photoLoad" accept="image/*" />
+              <span id="fileValue">Add image</span>
+            </label>
+            <div id="ImageGet"></div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section start-->
+  <section class="upload-video-section">
+    <div class="container">
+      <div class="row">
+        <div class="videos-title top-border">
+          <h4>Add Videos</h4>
+        </div>
+      </div>
+      <div class="video-deatils mb-5">
+        <div class="row">
+          <div class="col-lg-6 col-sm-12 ">
+            <div class="video-link">
+              <h4> Video link 1</h4>
+              <div class="input-link">
+                <input type="text" class="link-data">
+                <i type="submit" class="fa-solid fa-plus slidkfjdhf"></i>
+              </div>
+            </div>
+            <div class="video-link thmslkid">
+              <h4> Video link 2</h4>
+              <div class="input-link">
+                <input type="text" class="link-data">
+                <i type="submit" class="fa-solid fa-plus"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <div class="information-link">
+              <i class="fa-solid fa-circle-info"></i>
+              <p>If you don't have the videos handy, don't worry. You can add or edit them after you complete your ad
+                using the "Manage Your Ad" page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section start-->
+  <section class="note-section">
+    <div class="container">
+      <div class="row d-lg-flex justify-content-lg-center align-items-lg-center">
+        <div class="note-title top-border">
+          <h4>ENTER SELLER'S NOTES</h4>
+        </div>
+        <div class="col-lg-8 col-md-7 col-sm-12">
+          <div class="text-area">
+            <nav class="note-menu">
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-b"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-i"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-underline"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-quote-left"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-strikethrough"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-list"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-list-ol"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-align-left"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-align-center"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-align-right"></i></a></li>
+                <li><a class="kitndtrj" href="#"><i class="fa-solid fa-rotate-right"></i></a></li>
+                <li><a class="kitndtrj" href="#"><i class="fa-solid fa-rotate-left"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-link"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-expand"></i></a></li>
+                
+              </ul>
+            </nav>
+            <textarea class="tekghjislikfk"></textarea>
+          </div>
+        </div>
+        <div class="col-lg-4 colmd-5 col-sm-12">
+          <div class="Add-the-Template">
+            
+            <a href="#"><i class="fa-solid fa-plus"></i>Add the Template Phrases</a>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- section start-->
+  <section class="asking-price-section">
+    <div class="container">
+      <div class="row">
+        <div class="price-title top-border ">
+          <h2>SET YOUR ASKING PRICE</h2>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+          <div class="price">
+            <h5>Price* ($)</h5>
+            <div class="searchMaxArea">
+              <input type="number" placeholder="" />
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12">
+          <div class="competitively">
+            <h4>PRICE YOUR VEHICLE COMPETITIVELY.</h4>
+            <p>Determine a competitive price by comparing your vehicle's information and mileage to similar vehicles for
+              sale by dealers and private sellers in your area. Then consider pricing your vehicle within range. Be sure
+              to provide Seller's Comments and photos to highlight the best features of your vehicle, especially if your
+              asking price is above average.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- section start-->
+  <section class="sing_up_section">
+    <div class="container">
+      <div class="sing_up_body">
+        <div class="row">
+          <div class="stm-registation mb-5">
+            <h3>Sign Up </h3>
+            <p>Already Registered? Members</p>
+            <a href="#">Login Here</a>
+            <p></p>
+          </div>
+          <div class="register-form-area">
+            <div class="row">
+              <div class="col-lg-9 col-md-12 mb-md-5">
+                <form action="" class="register-form">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label for="" class="form-label label1">First Name</label>
+                        <input type="text" name="" id="" class="form-control control1"
+                          placeholder="Enter your fast name" />
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label for="" class="form-label label1">Last Name</label>
+                        <input type="text" name="" id="" class="form-control control1"
+                          placeholder="Enter your last name" />
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label for="" class="form-label label1">Phone number</label>
+                        <input type="text" name="" id="" class="form-control control1"
+                          placeholder="Enter phone number" />
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label for="" class="form-label label1">Email *</label>
+                        <input type="text" name="" id="" class="form-control control1" placeholder="Enter Email" />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check mb-5">
+                        <input class="form-check-input" type="checkbox" value="" id="" />
+                        <label class="form-check-label" for="">I have a WhatsApp account with this number </label>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label for="" class="form-label label1">Login *</label>
+                        <input type="text" name="" id="" class="form-control control1" placeholder="Enter Login " />
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                      <div class="mb-3">
+                        <label for="" class="form-label label1">Password *</label>
+                        <input type="password" name="" id="" class="form-control control1"
+                          placeholder=" Enter Password" />
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-check mb-5">
+                        <input class="form-check-input" type="checkbox" value="" id="" />
+                        <label class="form-check-label" for="">I have a WhatsApp account with this number </label>
+                      </div>
+                    </div>
+                    <button type="submit" class=" sing_up_btn">
+                      sing up now!
+                    </button>
+
+
+
+                  </div>
+                </form>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                  <div class="recomendation">
+                    <h4>Recomendation & Guides</h4>
+                    <p>By providing us with your phone number, you acknowledge and agree that we (and/or our service
+                      providers) may contact you at the mobile or other telephone number you list, in order to provide you
+                      with additional information or offers regarding our services, and that in doing so we may utilize
+                      automatic dialing services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="tooltip-buttons-arive">
+            <div class="tooltip-child">
+              <button aria-label="Add a Listing using Free or Paid Plan limits" tooltip-position="top"><i class="fa-solid fa-car-burst"></i><span>Submit listing</span></button>
+            </div>
+            <div class="tooltip-child">
+              <button aria-label="Pay for this Listing" tooltip-position="top"><i class="fa-solid fa-car-burst"></i><span>Pay for Listing	</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--========================== end add-car page   ==========================-->
+
+  </div>
+
+
+
+  <footer class="footerMain">
+    <div class="container">
+      <div class="footerTop">
+        <div class="footerTopLeft">
+          <form action="" method="post">
+            <input type="text" name="name" placeholder="Enter Make Or Model" />
+            <button type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+        <div class="footerTopRight">
+          <ul>
+            <li><a href="#">Help</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <p>Copyright © 2021. Motors – WordPress Theme by StylemixThemes</p>
+        <ul>
+          <li>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ~~~~~~~~~~ JS Files ~~~~~~~~~~-->
+  <!-- jQuery -->
+
+  <script src="assets/js/jquery.min.js"></script>
+
+  <script src="assets/js/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <!-- Owl Carousel -->
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <!-- Modernizr -->
+  <script src="assets/js/modernizr-3.11.2.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+  <!-- ui -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <!-- Custom JS (Handed)-->
+  <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
